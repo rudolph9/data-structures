@@ -25,3 +25,13 @@ func TestInsertPrev(t *testing.T) {
 		t.Errorf("next is not the inserted node")
 	}
 }
+
+func TestPrint(t *testing.T) {
+	myNode := &Node{ value: "myNode" }
+	myNode.InsertNext("myNode1").InsertNext("myNode2")
+	linkedList := LinkedList{ head: myNode }
+
+	if listPrint := linkedList.Print(); listPrint != "myNode\nmyNode1\nmyNode2\n" {
+		t.Errorf("wrong Print %v", listPrint)
+	}
+}
