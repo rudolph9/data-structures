@@ -1,6 +1,8 @@
 package linkedlist
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestInsertNext(t *testing.T) {
 	myNode := Node{
