@@ -18,7 +18,9 @@ func (n *Node) InsertNext(val value) (*Node){
 	return next
 }
 
-//func (*Node) InsertPrev(val value) (*Node){}
+func (n *Node) InsertPrev(val value) (*Node){
+	return &Node{ value: val, next: n }
+}
 
 
 
