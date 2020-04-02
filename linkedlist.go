@@ -34,10 +34,3 @@ func (l LinkedList) Print() (string){
 
 	return rtn
 }
-
-
-
-
-
-
-
